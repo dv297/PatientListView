@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/lyMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        
+        <LinearLayout
+            android:id="@+id/lay_edit_texts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fieldName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890 " />
+
+            <TextView
+                android:id="@+id/lblAge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Age"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/fieldAge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/lblHeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Height"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fieldHeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="numberDecimal" />
+
+          	<Button
+          	    android:id="@+id/addPatientButton"
+          	    android:layout_width="fill_parent"
+          	    android:layout_height="wrap_content"
+          	    android:text="Submit"
+          	    ></Button>
+          	</LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
